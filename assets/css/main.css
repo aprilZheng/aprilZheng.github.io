@@ -3034,6 +3034,22 @@ input, select, textarea {
 						border-top: 0;
 						margin-top: -1em;
 					}
+		.submenu{
+			display: none;
+			padding-left: 1.5em;
+		}
+
+		.submenu li a{
+			background-color: #444;
+		}
+
+		.submenu li a:hover{
+			background-color: #555;
+		}
+
+		#menu > ul > li:hover .submenu{
+			display: block;
+		}
 
 		#menu > .close {
 			-moz-transition: opacity 0.45s ease, -moz-transform 0.45s ease;
