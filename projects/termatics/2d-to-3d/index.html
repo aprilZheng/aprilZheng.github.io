@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tonglin - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="/index.html" class="logo">
+									<span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Tonglin Zheng</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="/index.html">Home</a></li>
+							<li><a href="/projects/termatics/index.html">Termatics</a></li>
+							<li><a href="/projects/graduate-studies/index.html">Graduate Studies</a></li>
+							<li><a href="/projects/undergraduate/index.html">Undergraduate</a></li>
+							<li><a href="/projects/data-visualization/index.html">Data Visualization</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>
+                                2D to 3D Thermal Modeling - Termatics
+                            </h1>
+                            <p>
+                                This project explores the reconstruction of a 3D thermal model using pairs of 2D RGB and thermal images.
+                                The goal was to integrate machine learning and 3D modeling techniques for accurate thermal visualization.
+                                Despite challenges, the project offered valuable insights into thermal image processing and 3D reconstruction workflows.
+                            </p>
+
+                            <h2>Color Calibration</h2>
+                            <p>
+                                Thermal cameras often map temperature ranges dynamically, causing color inconsistencies between images.
+                                To address this, I implemented a calibration process that standardized color mapping across images, making them suitable for 3D reconstruction.
+                            </p>
+
+                            <h2>Experimenting with Gaussian Splatting</h2>
+                            <p>
+                                I tested Gaussian Splatting, a method for reconstructing 3D models, using RGB images to evaluate its feasibility for city-scale 3D reconstruction.
+                                The results, while computationally expensive, provided key insights into the limitations of this approach for thermal data integration.
+                            </p>
+
+                            <h2>Generating a Base 3D Model</h2>
+                            <p>
+                                Due to the limitations of existing tools like Google 3D Tiles and Cesium for editable models, I used OpenStreetMap's 3D map data to create a basic framework for thermal mapping
+                            </p>
+
+                            <h2>UV Mapping Calibrated Thermal Images</h2>
+                            <p>
+                                The calibrated thermal images were manually UV mapped onto the 3D model to visualize thermal data.
+                                While automation was considered, manual adjustments were made to meet tight competition deadlines.
+                                This step showcased the potential of combining thermal imagery with 3D modeling techniques.
+                            </p>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; 2024 Tonglin Zheng. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
