@@ -2310,6 +2310,17 @@ input, select, textarea {
 
 /* Image */
 
+/* 3张图片并排 */
+.image-row img {
+    display: inline-block;
+    width: 30%; /* 每张图片占 30% 宽度 */
+    margin-right: 1%; /* 设置图片间距 */
+  }
+.image-row img:last-child {
+    margin-right: 0; /* 去掉最后一张图片的右边距 */
+  }
+/*  */
+
 	.image {
 		border-radius: 4px;
 		border: 0;
