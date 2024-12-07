@@ -59,45 +59,59 @@
                                 Despite challenges, the project offered valuable insights into thermal image processing and 3D reconstruction workflows.
                             </p>
 
-                            <h2>Color Calibration</h2>
+                            <section>
+                                <h2>Color Calibration</h2>
 
-                            <div class="image-row">
-                                <img src="/img/frame_1_0_IR2.jpg" style="border-radius: 4px;" alt="">
-                                <img src="/img/frame_2_0_IR2.jpg" style="border-radius: 4px;" alt="">
-                                <img src="/img/processed_frame_2_0_IR2.jpg" style="border-radius: 4px;" alt="">
-                            </div>
+                                <div class="image-row">
+                                    <img src="/img/frame_1_0_IR2.jpg" style="border-radius: 4px;" alt="">
+                                    <img src="/img/frame_2_0_IR2.jpg" style="border-radius: 4px;" alt="">
+                                    <img src="/img/processed_frame_2_0_IR2.jpg" style="border-radius: 4px;" alt="">
+                                </div>
 
-                            <p>
-                                Thermal cameras often map temperature ranges dynamically, causing color inconsistencies between images.
-                                To address this, I implemented a calibration process that standardized color mapping across images, making them suitable for 3D reconstruction.
-                            </p>
+                                <p>
+                                    Thermal cameras often map temperature ranges dynamically, causing color inconsistencies between images.
+                                    To address this, I implemented a calibration process that standardized color mapping across images, making them suitable for 3D reconstruction.
+                                </p>
+                            </section>
 
-                            <h2>Experimenting with Gaussian Splatting</h2>
-                            <div class="image-row">
-                                <img src="/img/viewer.jpg" style="width: 300px; height: 300px; border-radius: 4px;" alt="">
-                                <img src="/img/viewer_zone_in.png" style="width: 300px; height: 300px; border-radius: 4px;" alt="">
-                                <img src="" alt="">
-                            </div>
-                            <p>
-                                I tested Gaussian Splatting, a method for reconstructing 3D models, using RGB images to evaluate its feasibility for city-scale 3D reconstruction.
-                                The results, while computationally expensive, provided key insights into the limitations of this approach for thermal data integration.
-                            </p>
+                            <section>
+                                <h2>Experimenting with Gaussian Splatting</h2>
+                                <div class="image-row">
+                                    <img src="/img/viewer.jpg" style="width: 300px; height: 300px; border-radius: 4px;" alt="">
+                                    <img src="/img/viewer_zone_in.png" style="width: 300px; height: 300px; border-radius: 4px;" alt="">
+                                    <img src="" alt="">
+                                </div>
+                                <p>
+                                    I tested Gaussian Splatting, a method for reconstructing 3D models, using RGB images to evaluate its feasibility for city-scale 3D reconstruction.
+                                    The results, while computationally expensive, provided key insights into the limitations of this approach for thermal data integration.
+                                </p>
+                            </section>
 
-                            <h2>Generating a Base 3D Model</h2>
-                            <p>
-                                Due to the limitations of existing tools like Google 3D Tiles and Cesium for editable models, I used OpenStreetMap's 3D map data to create a basic framework for thermal mapping
-                            </p>
+                            <section>
+                                <h2>Generating a Base 3D Model</h2>
+                                <p>
+                                    Due to the limitations of existing tools like Google 3D Tiles and Cesium for editable models, I used OpenStreetMap's 3D map data to create a basic framework for thermal mapping
+                                </p>
+                            </section>
 
-                            <h2>UV Mapping Calibrated Thermal Images</h2>
-                            <span class="image left">
-                                <img src="/img/blender_map.png" alt="" />
-                            </span>
+                            <section>
+                                <h2>UV Mapping Calibrated Thermal Images</h2>
+                                <span class="image left">
+                                    <img src="/img/blender_map.png" alt="" />
+                                </span>
 
-                            <p style="text-align: left; padding-top: 90px;">
-                                The calibrated thermal images were manually UV mapped onto the 3D model to visualize thermal data.
-                                While automation was considered, manual adjustments were made to meet tight competition deadlines.
-                                This step showcased the potential of combining thermal imagery with 3D modeling techniques.
-                            </p>
+                                <p style="text-align: left; padding-top: 90px;">
+                                    The calibrated thermal images were manually UV mapped onto the 3D model to visualize thermal data.
+                                    While automation was considered, manual adjustments were made to meet tight competition deadlines.
+                                    This step showcased the potential of combining thermal imagery with 3D modeling techniques.
+                                </p>
+                            </section>
+
+                            <section>
+                                <p>While the results of this project revealed challenges in thermal 3D modeling, it also provided a foundation for future improvements.
+                                    With further exploration, automating workflows and refining reconstruction techniques could lead to more accurate and scalable solutions.
+                                </p>
+                            </section>
 
 						</div>
 					</div>
