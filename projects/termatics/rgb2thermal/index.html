@@ -61,14 +61,41 @@
 									</div>
 
 									<p>
-										During my time at Termatics, I worked on two machine learning projects that focused on bridging RGB and thermal imagery.
-										These projects aimed to explore the potential of combining computer vision techniques with 3D modeling and thermal image prediction.
-										While the results were mixed, they provided valuable insights and a strong foundation for future improvements.
-									</p>
+                                        This project aimed to develop a machine learning pipeline for predicting thermal images from RGB inputs.
+                                        By leveraging multiple datasets and experimenting with different modeling approaches, significant progress was made despite challenges in data generation and alignment.
+                                    </p>
 
-									<h3>Left &amp; Right</h3>
-									<p><span class="image left"><img src="/images/pic14.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									<p><span class="image right"><img src="/images/pic15.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									<h3>Data Challenges and Solutions</h3>
+                                    <p>
+                                        Starting with a small dataset of 555×4 RGB-thermal pairs, I expanded it through simulation using AirSIM and Unreal Engine.
+                                        Real-world datasets (e.g., FLIR) were also incorporated for better diversity and accuracy.
+                                    </p>
+
+                                    <h3>Modeling Approaches</h3>
+                                    <p>
+                                        Experimented with unpaired CycleGAN and paired Pix2Pix models.
+                                        Pix2Pix achieved better results, but distortions highlighted the need for enhanced data alignment.
+                                    </p>
+
+                                    <h3>Data Alignment</h3>
+                                    <p>
+                                        Developed a pipeline to align RGB and thermal images at a pixel level. 
+                                        This improved the quality of predictions significantly, demonstrating the importance of pre-processing in machine learning workflows.
+                                    </p>
+
+                                    <h3>Results Over Time</h3>
+                                    <p>Below are visualizations of the model's progression, from initial attempts to the final aligned results:</p>
+
+									<div class="image-row">
+                                        <img src="/img/img_PhysXCar_0_0_1724254135793065500_real.png">
+                                        <img src="/img/img_PhysXCar_0_0_1724254137954482400_fake.png">
+                                        <img src="">
+                                    </div>
+									
+                                    <p>
+                                        <span class="image right"><img src="/images/pic15.jpg" alt="" /></span>
+                                        Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
+                                    </p>
 								</section>
 
 						</div>
